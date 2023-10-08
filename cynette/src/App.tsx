@@ -1,16 +1,12 @@
-import Navbar from "./components/Dashboard/Shared/Navbar";
-
+import Navbar from './components/Dashboard/Shared/Navbar';
 
 function App() {
-
-
   return (
     <>
       <div>
-      <Navbar></Navbar>
+        <Navbar></Navbar>
       </div>
     </>
-    
   );
 }
 
