@@ -1,4 +1,4 @@
-import PageHandler from './Shared/PageHandler';
+import PageHandler from './PageHandler';
 import { Outlet } from 'react-router-dom';
 
 const Dashboard = () => {

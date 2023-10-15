@@ -1,5 +1,5 @@
-import { DashboardHandler } from '../../../interface/interface'
-import Navbar from './Navbar'
+import { DashboardHandler } from '../../interface/interface'
+import Navbar from './Shared/Navbar'
 
 const PageHandler = (props: DashboardHandler) => {
     return (
