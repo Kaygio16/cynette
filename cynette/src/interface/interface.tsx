@@ -11,3 +11,8 @@ export interface PageErrorType {
   internal: boolean;
   message: string;
 }
+
+export interface ThemeContextType {
+  theme: string;
+  toggleDisplayMode: () => void;
+}
