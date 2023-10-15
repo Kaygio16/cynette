@@ -2,22 +2,22 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <div className='flex flex-row bg-green-200 justify-between py-4'>
+    <nav className='flex flex-row bg-green-200 justify-between py-4'>
       <div className='ml-5'>
         <img src='' alt='company icon' />
       </div>
-      <div className='flex gap-8 mr-5 '>
-        <div>Home</div>
-        <div>About</div>
-        <div>Contact Us</div>
-        <div>Blog</div>
+      <ul className='flex gap-8 mr-5 '>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Blog</a></li>
         <div className='flex before:border before:border-solid before:border-red-400'>
           <label htmlFor='' className='ml-4'>
             mode
           </label>
         </div>
-      </div>
-    </div>
+      </ul>
+    </nav>
   );
 }
 
