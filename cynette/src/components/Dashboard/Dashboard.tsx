@@ -15,13 +15,14 @@ const Dashboard = () => {
     <ThemeContext.Provider value={{theme, toggleDisplayMode}}>
     <div id={theme}>
       <PageHandler header>
-      <div>
+      <div  className={`${theme === 'dark' ? 'body' : 'body'} h-[93vh]`}>
         <Outlet />
       </div>
+      
       </PageHandler>
    
     </div>
-    // </ThemeContext.Provider>
+    </ThemeContext.Provider>
 
   );
 };
