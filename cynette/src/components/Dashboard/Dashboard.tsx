@@ -1,29 +1,34 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PageHandler from './PageHandler';
 import { Outlet } from 'react-router-dom';
 import { ThemeContext } from './ThemeContext';
 
 const Dashboard = () => {
-  const [ theme, setTheme ] = useState<string>('light') ;
+  const storedTheme: string = localStorage.getItem('theme')!;
 
-  const toggleDisplayMode = () => { 
-    setTheme( (theme: string) => (theme === 'light' ? 'dark' : 'light'))
-  }
+  useEffect(() => {
+    const items = localStorage.setItem('theme', theme);
+    if (theme) {
+      console.log(items);
+    }
+  });
 
-  
+  const [theme, setTheme] = useState<string>(storedTheme);
+
+  const toggleDisplayMode = () => {
+    setTheme((theme: string) => (theme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <ThemeContext.Provider value={{theme, toggleDisplayMode}}>
-    <div id={theme}>
-      <PageHandler header>
-      <div  className={`${theme === 'dark' ? 'body' : 'body'} h-[93vh]`}>
-        <Outlet />
+    <ThemeContext.Provider value={{ theme, toggleDisplayMode }}>
+      <div id={theme}>
+        <PageHandler header>
+          <div className={`${theme === 'dark' ? 'body' : 'body'} h-[93vh]`}>
+            <Outlet />
+          </div>
+        </PageHandler>
       </div>
-      
-      </PageHandler>
-   
-    </div>
     </ThemeContext.Provider>
-
   );
 };
 

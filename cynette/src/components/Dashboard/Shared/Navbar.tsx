@@ -1,10 +1,13 @@
-import { useContext } from 'react';
+import { useContext} from 'react';
 import {  NavLink } from 'react-router-dom';
 import { ThemeContext } from '../ThemeContext';
 
 import ThemeSwitch from './ThemeSwitch';
 function Navbar() {
   const themeValue = useContext(ThemeContext)
+
+
+
   return (
     <nav className={`${themeValue.theme === 'dark' ? 'navbar' : 'navbar'} flex flex-row  justify-between py-4`}>
       <div className='ml-5 m-auto hover:cursor-pointer'>
