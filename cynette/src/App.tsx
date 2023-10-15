@@ -1,13 +1,22 @@
-import Navbar from './components/Dashboard/Shared/Navbar';
+import {
+  createBrowserRouter
+} from "react-router-dom";
+import Dashboard from "./components/Dashboard/Dashboard";
+import ErrorPage from "./components/Dashboard/Shared/ErrorPage";
 
-function App() {
-  return (
-    <>
-      <div>
-        <Navbar></Navbar>
-      </div>
-    </>
-  );
-}
+
+const App =  createBrowserRouter([
+  {
+    path: "/",
+    element: <Dashboard />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        // path: "team",
+        // element: <Team />,
+      },
+    ],
+  },
+])
 
 export default App;
