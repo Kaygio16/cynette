@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -7,10 +8,10 @@ function Navbar() {
         <img src='' alt='company icon' />
       </div>
       <ul className='flex gap-8 mr-5 '>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Blog</a></li>
+        <li><Link to="/Home">Home</Link></li>
+        <li><Link to="/AboutUs">About</Link></li>
+        <li><Link to="/ContactUs">Contact Us</Link></li>
+        <li><Link to="/Blog">Blog</Link></li>
         <div className='flex before:border before:border-solid before:border-red-400'>
           <label htmlFor='' className='ml-4'>
             mode
