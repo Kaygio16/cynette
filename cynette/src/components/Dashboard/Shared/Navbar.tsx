@@ -5,7 +5,7 @@ import { ThemeContext } from '../ThemeContext';
 function Navbar() {
   const themeValue = useContext(ThemeContext)
   return (
-    <nav className='flex flex-row bg-green-200 justify-between py-4'>
+    <nav className={`${themeValue.theme === 'dark' ? 'navbar' : 'navbar'} flex flex-row  justify-between py-4`}>
       <div className='ml-5'>
         <img src='' alt='company icon' />
       </div>
