@@ -23,18 +23,27 @@
 }
 
 #light .switch {
-    background-color: white;
-    color: var(--text-nav-bar-dark);
-    box-shadow:  0 4px 6px -1px #3245b5, 0 2px 4px -2px #3245b5;
+  background-color: white;
+  color: var(--text-nav-bar-dark);
+  box-shadow:
+    0 4px 6px -1px #3245b5,
+    0 2px 4px -2px #3245b5;
+}
 
-  }
-  
-  #dark .switch {
-    background-color: var(--bg-nav-bar-light);
-    color: var(--text-nav-bar-light);
-    /* box-shadow: 0 4px 6px -1px #B6FFFA; */
-   box-shadow:  0 4px 6px -1px #B6FFFA, 0 2px 4px -2px #B6FFFA;
-  }
+#dark .switch {
+  background-color: var(--bg-nav-bar-light);
+  color: var(--text-nav-bar-light);
+  /* box-shadow: 0 4px 6px -1px #B6FFFA; */
+  box-shadow:
+    0 4px 6px -1px #b6fffa,
+    0 2px 4px -2px #b6fffa;
+}
+#dark .switch:hover {
+  background-color: #f8f0e5;
+}
+#light .switch:hover {
+  background-color: #ffc6ac;
+}
 #dark .body {
   background-color: var(--bg-body-dark);
   color: var(--text-body-dark);
@@ -43,4 +52,8 @@
 #light .body {
   background-color: var(--bg-body-light);
   color: var(--text-body-light);
+}
+
+ul li .active {
+  color: rgb(255, 159, 103);
 }
