@@ -13,6 +13,6 @@ export interface PageErrorType {
 }
 
 export interface ThemeContextType {
-    theme: string;
-    toggleDisplayMode: () => void;
+  theme: string;
+  toggleDisplayMode: () => void;
 }

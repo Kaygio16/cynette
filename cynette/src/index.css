@@ -3,33 +3,31 @@
 @tailwind utilities;
 
 :root {
-    --bg-nav-bar-light:#687EFF;
-    --text-nav-bar-light:white;
-    --bg-nav-bar-dark: black;
-    --text-nav-bar-dark:#687EFF;
-    --bg-body-light: white;
-    --text-body-light: black;
-    --bg-body-dark: rgb(37, 37, 37);
-    --text-body-dark:#80B3FF;
-    
-
+  --bg-nav-bar-light: #687eff;
+  --text-nav-bar-light: white;
+  --bg-nav-bar-dark: black;
+  --text-nav-bar-dark: #687eff;
+  --bg-body-light: white;
+  --text-body-light: black;
+  --bg-body-dark: rgb(37, 37, 37);
+  --text-body-dark: #80b3ff;
 }
-#dark .navbar{
-    background-color: var(--bg-nav-bar-dark);
-    color: var(--text-nav-bar-dark);
-  }
-  
-  #light .navbar { 
-    background-color: var(--bg-nav-bar-light);
-    color: var(--text-nav-bar-light)
-  }
+#dark .navbar {
+  background-color: var(--bg-nav-bar-dark);
+  color: var(--text-nav-bar-dark);
+}
 
-  #dark .body{
-    background-color: var(--bg-body-dark);
-    color: var(--text-body-dark);
-  }
-  
-  #light .body { 
-    background-color: var(--bg-body-light);
-    color: var(--text-body-light)
-  }
+#light .navbar {
+  background-color: var(--bg-nav-bar-light);
+  color: var(--text-nav-bar-light);
+}
+
+#dark .body {
+  background-color: var(--bg-body-dark);
+  color: var(--text-body-dark);
+}
+
+#light .body {
+  background-color: var(--bg-body-light);
+  color: var(--text-body-light);
+}
