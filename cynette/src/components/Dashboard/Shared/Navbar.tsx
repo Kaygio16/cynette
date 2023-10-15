@@ -1,7 +1,9 @@
-import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../ThemeContext';
 
 function Navbar() {
+  const themeValue = useContext(ThemeContext)
   return (
     <nav className='flex flex-row bg-green-200 justify-between py-4'>
       <div className='ml-5'>
@@ -13,7 +15,7 @@ function Navbar() {
         <li><Link to="/ContactUs">Contact Us</Link></li>
         <li><Link to="/Blog">Blog</Link></li>
         <div className='flex before:border before:border-solid before:border-red-400'>
-          <label htmlFor='' className='ml-4'>
+          <label htmlFor='' className='ml-4' onClick={themeValue.toggleDisplayMode}>
             mode
           </label>
         </div>

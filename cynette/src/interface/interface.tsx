@@ -13,6 +13,6 @@ export interface PageErrorType {
 }
 
 export interface ThemeContextType {
-    children: React.ReactNode;
-    theme: string
+    theme: string;
+    toggleDisplayMode: () => void;
 }
